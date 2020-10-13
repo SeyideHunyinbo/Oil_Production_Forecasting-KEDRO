@@ -1,0 +1,114 @@
+# DWT
+thresh: 0.5
+wavelet: "bior3.7"
+level: 4
+mode1: "per"
+mode2: "soft"
+
+# Wavelets
+# ['bior1.1', 'bior1.3', 'bior1.5', 'bior2.2', 'bior2.4', 'bior2.6', 'bior2.8', 'bior3.1', 'bior3.3', 'bior3.5', 'bior3.7', 'bior3.9', 'bior4.4', 'bior5.5', 'bior6.8', 'coif1', 'coif2', 'coif3', 'coif4', 'coif5', 'coif6', 'coif7', 'coif8', 'coif9', 'coif10', 'coif11', 'coif12', 'coif13', 'coif14', 'coif15', 'coif16', 'coif17', 'db1', 'db2', 'db3', 'db4', 'db5', 'db6', 'db7', 'db8', 'db9', 'db10', 'db11', 'db12', 'db13', 'db14', 'db15', 'db16', 'db17', 'db18', 'db19', 'db20', 'db21', 'db22', 'db23', 'db24', 'db25', 'db26', 'db27', 'db28', 'db29', 'db30', 'db31', 'db32', 'db33', 'db34', 'db35', 'db36', 'db37', 'db38', 'dmey', 'haar', 'rbio1.1', 'rbio1.3', 'rbio1.5', 'rbio2.2', 'rbio2.4', 'rbio2.6', 'rbio2.8', 'rbio3.1', 'rbio3.3', 'rbio3.5', 'rbio3.7', 'rbio3.9', 'rbio4.4', 'rbio5.5', 'rbio6.8', 'sym2', 'sym3', 'sym4', 'sym5', 'sym6', 'sym7', 'sym8', 'sym9', 'sym10', 'sym11', 'sym12', 'sym13', 'sym14', 'sym15', 'sym16', 'sym17', 'sym18', 'sym19', 'sym20']
+
+
+# Splines
+spline_degree: 3
+s: 0
+extrapolate: False
+
+# principal_component_analysis
+n_components: 5
+
+#kmeans_clustering
+n_clusters: 4
+
+#split_data
+test_size: 0.001
+random_state: 42
+
+#ANN_model_1
+epochs_model_1: 100
+hidden_layer_nodes_model_1: 35
+
+#ANN_model_2
+epochs_model_2: 100
+hidden_layer_nodes_model_2: 35
+
+#CNN
+epochs_CNN: 500
+batch_size: 10
+fully_connected_layer_1: 100
+fully_connected_layer_2: 100
+
+
+# SAGD_raw_data_path
+path_raw: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/01_raw/01_SAGD"
+
+# SAGD_raw_data_path: matlab data
+path_raw_matlab: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/10_MATLAB_coupling/SAGD/02_Data/01_Training/01_152 wells/02_Dynamic/Cleaned_v1"
+
+#SAGD_raw_static_data_path
+path_raw_static: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/01_raw/01_SAGD/01_Static_Data"
+
+#SAGD_raw_static_data_path: matlab data
+path_raw_static_matlab: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/10_MATLAB_coupling/SAGD/02_Data/01_Training/01_152 wells/01_Static"
+
+
+#SAGD_intermediate_data_path
+path_intermediate: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/02_intermediate/01_SAGD"
+
+#SAGD_primary_data_path
+path_primary: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/03_primary/01_SAGD"
+
+#SAGD_features_path
+path_features: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/04_features/01_SAGD"
+
+
+
+#SAGD_model_input_path
+path_model_input: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/05_model_input/01_SAGD"
+
+#SAGD_model_input_path: matlab data
+path_model_input_matlab: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/10_MATLAB_coupling/SAGD/02_Data/02_Prediction/02_Dynamic/Cleaned_v1"
+
+#SAGD_validatation_static_data_path
+path_val_stats: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/05_model_input/01_SAGD/01_Static_Data"
+
+#SAGD_validatation_static_data_path: matlab data
+path_val_stats_matlab: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/10_MATLAB_coupling/SAGD/02_Data/02_Prediction/01_Static"
+
+
+
+#SAGD_validation_pre_processed_data_path
+path_val_pre_processed: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/05_model_input/01_SAGD/02_Pre-processed_Data"
+
+#SAGD_models_path
+path_models: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/06_models/01_SAGD"
+
+#SAGD_model_output_path
+path_model_output: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD"
+
+#SAGD_model_output_path_No_DWT
+path_model_output_No_DWT: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT"
+
+#SAGD_model_output_path_No_DWT_scheme1:  165 wells, Elapsed time part of inputs; predict steam, then oil
+path_model_output_No_DWT_scheme1: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT/Elapsedtime_scheme1"
+
+#SAGD_model_output_path_No_DWT_scheme2:  165 wells, Elapsed time part of inputs; predict oil, then steam
+path_model_output_No_DWT_scheme2: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT/Elapsedtime_scheme2"
+
+#SAGD_model_output_path_No_DWT_DTW_scheme1
+path_model_output_No_DWT_DTW_scheme1: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT/DTW_scheme1"
+
+#SAGD_model_output_path_No_DWT_DTW_scheme2
+path_model_output_No_DWT_DTW_scheme2: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT/DTW_scheme2"
+
+
+#SAGD_model_output_path_No_DWT_RF_scheme1
+path_model_output_No_DWT_RF_scheme1: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT/RF_scheme1"
+
+#SAGD_model_output_path_No_DWT_RF_scheme2
+path_model_output_No_DWT_RF_scheme2: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/07_model_output/01_SAGD/No_DWT/RF_scheme2"
+
+#SAGD_reporting_path
+path_reporting: "C:/Users/shunyinb/OneDrive - Cenovus Energy Inc/Project/09_Kedro/analytics_new/data/08_reporting/01_SAGD"
+
+
